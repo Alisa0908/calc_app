@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class CalcController extends Controller
 {
     public function result($num1, $operators, $num2) 
-    {
+    {  //ここでswitch文､制御構文を使うというアイディアが肝! さらに､$resultという関数を利用し､計算もcontrollerでしてしまうよ
         switch ($operators) {
                 case 'addition':
                     $result = $num1 + $num2;
